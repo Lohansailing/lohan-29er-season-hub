@@ -272,3 +272,13 @@ h2 { letter-spacing: -.02em; }
   .form-grid .span-2 { grid-column: span 1; }
   .scores-grid { grid-template-columns: 1fr; }
 }
+
+
+.report-list { padding: 6px 18px; }
+.report-row { display: flex; gap: 11px; align-items: flex-start; padding: 13px 0; border-bottom: 1px solid var(--line); }
+.report-row:last-child { border-bottom: 0; }
+.report-row > svg { color: var(--blue); flex: 0 0 auto; margin-top: 1px; }
+.report-row p { margin: 4px 0 0; color: var(--muted); font-size: 12px; }
+.report-summary { margin-top: 24px; display: flex; gap: 12px; align-items: flex-start; }
+.report-summary > svg { color: var(--green); flex: 0 0 auto; }
+.report-summary p { margin: 4px 0 0; color: var(--muted); line-height: 1.5; }
