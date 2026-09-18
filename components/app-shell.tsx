@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { CalendarDays, Dumbbell, Gauge, Goal, Home, NotebookTabs, Settings, SlidersHorizontal, Soup, UsersRound, FileText } from "lucide-react";
+import { BarChart3, CalendarDays, Dumbbell, Gauge, Goal, Home, NotebookTabs, Settings, SlidersHorizontal, Soup, UsersRound, FileText } from "lucide-react";
 import { useHub } from "./data-provider";
 import { canAccess, type Resource } from "@/lib/rbac";
 
@@ -16,6 +16,7 @@ const items: { href: string; label: string; resource: Resource; icon: React.Comp
   { href: "/nutrition", label: "Nutrition", resource: "nutrition", icon: Soup },
   { href: "/sponsors", label: "Sponsoring", resource: "sponsors", icon: UsersRound },
   { href: "/documents", label: "Documents", resource: "documents", icon: FileText },
+  { href: "/reports", label: "Bilans", resource: "reports", icon: BarChart3 },
   { href: "/settings", label: "Réglages app", resource: "settings", icon: Settings }
 ];
 
