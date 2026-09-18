@@ -9,6 +9,6 @@
     }
   },
   "postCreateCommand": "npm install",
-  "postStartCommand": "bash -lc 'pkill -f "next dev" >/dev/null 2>&1 || true; nohup npm run dev -- --hostname 0.0.0.0 >/tmp/29er-season-hub.log 2>&1 &'",
+  "postStartCommand": "nohup npm run dev -- --hostname 0.0.0.0 >/tmp/29er-season-hub.log 2>&1 &",
   "remoteUser": "node"
 }
